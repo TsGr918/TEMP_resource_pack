@@ -1,0 +1,2 @@
+# TEMP_resource_pack
+TEMP_resource_pack
