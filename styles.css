@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("assets/shorekeeper.banner.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    color: white;
+    overflow-x: hidden;
+    font-size: 16px; 
+}
+
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-page button {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875rem; 
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.5rem; 
+    padding: 0.5rem 1.25rem; 
+    position: relative;
+    text-align: center;
+    text-decoration: none solid #000000;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 7.5rem; 
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: all 0.3s ease-in-out;
+}
+
+.landing-page button:hover {
+    background: darkviolet;
+}
+
+.landing-page button:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 0.25rem;
+    left: 0.25rem;
+    width: calc(100% - 0.0625rem);
+    height: calc(100% - 0.0625rem);
+}
+
+.landing-page button:hover:after {
+    bottom: 0.125rem;
+    left: 0.125rem;
+}
+
+@media (min-width: 48rem) {
+    .landing-page button {
+        padding: 0.5rem 2rem; 
+        font-size: 1rem; 
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.625rem 0; 
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.25rem; 
+}
+
+.logo img {
+    width: 3.125rem; 
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 0.9375rem; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: lightblue;
+}
+
+main {
+    padding-top: 5rem; 
+    text-align: center;
+}
+
+section {
+    padding: 3.125rem 1.25rem; 
+    min-height: 100vh;
+}
